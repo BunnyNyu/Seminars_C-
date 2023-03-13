@@ -4,7 +4,7 @@
 
 Console.Clear();
 Console.Write("Введите число: ");
-int numberUser = int.Parse(Console.ReadLine());
+int numberUser = Convert.ToInt32(Console.ReadLine());
 for (int i = -numberUser; i <= numberUser; i++)
 {
     Console.Write(i + ", ");
