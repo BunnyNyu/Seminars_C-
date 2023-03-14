@@ -24,10 +24,13 @@ while (index1 < n1 || index2 < n2)
         index1++;
         break;
     }
-    else if (array2[index2] == find)
+    else if (array2[index2] == find) ;
     {
         int result2 = index2;
         Console.WriteLine(result2);
         index2++;
     }
 }
+
+
+// где-то ошибка...
