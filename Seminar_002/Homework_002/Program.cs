@@ -15,16 +15,16 @@ Console.Write($"День недели номер {find} выходной?: ");
 int index1 = 0;
 int index2 = 0;
 
-while (index1 < n1 || index2 < n2 )
+while (index1 < n1 || index2 < n2)
 {
-    if(array1[index1] == find)
+    if (array1[index1] == find)
     {
         int result1 = index1;
         Console.WriteLine(result1);
         index1++;
         break;
     }
-    else if(array2[index2] == find)
+    else if (array2[index2] == find)
     {
         int result2 = index2;
         Console.WriteLine(result2);
