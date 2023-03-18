@@ -5,13 +5,21 @@
 // 32679 -> 6
 
 Console.Clear();
-
 Console.Write("Введите число: ");
 int userNum = Convert.ToInt32(Console.ReadLine());
 
-while (userNum <= 999)
+while (userNum > 999)
 {
-    int resultNum = userNum / 10;
+    int firstNum = userNum / 10;
+    userNum = firstNum;
 }
-int result = resultNum;
-Console.WriteLine(resultNum);
+if (userNum > 99)
+{
+    int secondNum = userNum % 10;
+    Console.Write(secondNum);
+}
+else
+{
+    Console.Write("Третьего числа нет");
+}
+
