@@ -4,6 +4,7 @@
 
 
 
+// Вариант 1 - через цикл
 
 Console.Clear();
 
@@ -35,6 +36,44 @@ else
 }
 
 
+
+
+
+// Вариант 2 - через функцию рандом и switch
+
+Console.Clear();
+
+int GetRandomNumber() // Имя функций всегда начинать с глагола
+{
+    return new Random().Next(-1000, 1000);
+}
+
+Console.WriteLine("Координата x: ");
+int x = GetRandomNumber();
+
+Console.Write("Координата y: ");
+int y = GetRandomNumber();
+
+switch (x, y)
+{
+    case (x > 0, y > 0):
+        Console.WriteLine("1 четверть");
+        break;
+
+    case (x < 0, y > 0):
+        Console.WriteLine("2 четверть");
+        break;
+
+    case (x > 0, y < 0):
+        Console.WriteLine("3 четверть");
+        break;
+
+    case (x < 0, y < 0):
+        Console.WriteLine("4 четверть");
+        break;
+
+    default: Console.WriteLine("четверть  не определена");
+}
 
 
 
